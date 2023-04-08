@@ -6,6 +6,7 @@ const Style = createGlobalStyle`
     background-color: ${(props) => props.theme.colors.appMainBg};
     font-family: ${(props) => props.theme.fonts.body};
     height: auto;
+    margin: 0;
   }
 `;
 

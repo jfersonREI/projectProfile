@@ -1,7 +1,7 @@
 //import "./App.css";
-import AdminGlobalStyle from "./theme/AdminGlobalStyle";
+import AppGlobalStyle from "./theme/AppGlobalStyle";
 import { ThemeProvider } from "styled-components";
-import theme from "./theme/AdminTheme";
+import theme from "./theme/AppTheme";
 
 import Card from "./components/Card/Card";
 import TextBtn from "./components/Buttons/TextBtn";
@@ -13,7 +13,7 @@ import { ReactComponent as HomeIcon } from "./assets/icon-home.svg";
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <AdminGlobalStyle />
+      <AppGlobalStyle />
       <Card>
         card
         <TextBtn text="Add Faculty" />

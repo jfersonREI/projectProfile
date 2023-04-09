@@ -1,7 +1,7 @@
 import React from "react";
 import { createGlobalStyle } from "styled-components";
 
-const Style = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${(props) => props.theme.colors.appMainBg};
     font-family: ${(props) => props.theme.fonts.body};
@@ -10,8 +10,8 @@ const Style = createGlobalStyle`
   }
 `;
 
-function AdminGlobalStyle(props) {
-  return <Style>{props.children}</Style>;
+function AppGlobalStyle(props) {
+  return <GlobalStyle>{props.children}</GlobalStyle>;
 }
 
-export default AdminGlobalStyle;
+export default AppGlobalStyle;

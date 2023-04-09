@@ -1,4 +1,3 @@
-//import "./App.css";
 import AppGlobalStyle from "./theme/AppGlobalStyle";
 import { ThemeProvider } from "styled-components";
 import theme from "./theme/AppTheme";
@@ -17,11 +16,11 @@ function App() {
       <Card>
         card
         <TextBtn text="Add Faculty" />
-        <IconBtn label="button" onClick={() => {}}>
-          <EditIcon title="Edit" />
+        <IconBtn label="Edit" onClick={() => {}}>
+          <EditIcon />
         </IconBtn>
-        <IconBtn label="button" onClick={() => {}}>
-          <HomeIcon title="Home" />
+        <IconBtn label="Home" onClick={() => {}}>
+          <HomeIcon />
         </IconBtn>
       </Card>
     </ThemeProvider>

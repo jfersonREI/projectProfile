@@ -45,7 +45,7 @@ export const projectTheme = {
 
   fonts: {
     body: "Roboto, system-ui, sans-serif",
-    heading: "inherit",
+    heading: "Merriweather, serif",
     monospace: "Menlo, monospace",
   },
   fontSizes: [

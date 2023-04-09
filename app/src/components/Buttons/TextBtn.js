@@ -9,16 +9,17 @@ const Button = styled.button`
   text-decoration: none;
   border: none;
   cursor: pointer;
-  font-size: ${props => props.theme.fontSizes[2]};
+  font-size: ${(props) => props.theme.fontSizes[2]};
+  font-family: ${(props) => props.theme.fonts.body};
 
   &:active,
   &:visited {
-    color: ${props => props.theme.colors.appNavLinkColor};
+    color: ${(props) => props.theme.colors.appNavLinkColor};
   }
 
   &:hover,
   &:focus {
-    color: ${props => props.theme.colors.appNavLinkColorHover};
+    color: ${(props) => props.theme.colors.appNavLinkColorHover};
     text-decoration: none;
   }
 `;

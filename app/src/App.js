@@ -13,6 +13,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <AppGlobalStyle />
+
       <Card>
         card
         <TextBtn text="Add Faculty" />

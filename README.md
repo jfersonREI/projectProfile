@@ -1,6 +1,6 @@
 # projectProfile
 
-### 'cd app'
+### `cd app`
 
 ### `npm start`
 

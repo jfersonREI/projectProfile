@@ -1,9 +1,17 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-const Button = styled.button`
-  background: ${(props) => props.theme.appTopbarBg};
-  color: ${(props) => props.theme.bodyColor};
+const DefaultButton = styled.button`
+  background: ${(props) => {
+    if (props.primary) return props.theme.colors.appNavLinkBgHover;
+    return props.theme.colors.appTopbarBg;
+  }};
+
+  color: ${(props) => {
+    if (props.primary) return props.theme.colors.red;
+    return props.theme.colors.bodyColor;
+  }};
+
   display: inline-flex;
   padding: ${(props) => props.theme.space[2]} ${(props) => props.theme.space[3]};
   text-decoration: none;
@@ -26,8 +34,12 @@ const Button = styled.button`
   }
 `;
 
-const Btn = ({ text, ...props }) => {
-  return <Button as={props.as}>{text}</Button>;
+const Button = ({ text, ...props }) => {
+  return (
+    <DefaultButton {...props} as={props.as}>
+      {text}
+    </DefaultButton>
+  );
 };
 
-export default Btn;
+export default Button;

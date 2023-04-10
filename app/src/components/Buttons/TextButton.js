@@ -24,8 +24,8 @@ const Button = styled.button`
   }
 `;
 
-const TextBtn = ({ text, ...props }) => {
+const TextButton = ({ text, ...props }) => {
   return <Button as={props.as}>{text}</Button>;
 };
 
-export default TextBtn;
+export default TextButton;

@@ -5,17 +5,17 @@ const Button = styled.button`
   background-color: transparent;
   height: 2.5rem;
   width: 2.5rem;
-  padding: ${props => props.theme.space[2]};
-  margin: 0 ${props => props.theme.space[1]} 0 0;
+  padding: ${(props) => props.theme.space[2]};
+  margin: 0 ${(props) => props.theme.space[1]} 0 0;
   border: 0;
   cursor: pointer;
   border-radius: 50%;
-  color: ${props => props.theme.colors.grayTwo};
+  color: ${(props) => props.theme.colors.grayTwo};
   position: relative;
 
   &:hover,
   &:focus {
-    color: ${props => props.theme.colors.grayThree};
+    color: ${(props) => props.theme.colors.grayThree};
   }
 
   > svg {
@@ -27,7 +27,7 @@ const Button = styled.button`
   }
 
   &.active {
-    color: ${props => props.theme.colors.appNaviconActive};
+    color: ${(props) => props.theme.colors.appNaviconActive};
 
     > svg {
       fill: currentColor;
@@ -39,8 +39,8 @@ const Button = styled.button`
   }
 `;
 
-const IconBtn = props => {
+const IconButton = (props) => {
   return <Button aria-label={props.label}>{props.children}</Button>;
 };
 
-export default IconBtn;
+export default IconButton;

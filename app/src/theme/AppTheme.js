@@ -32,6 +32,7 @@ export const projectTheme = {
     grayOne: "rgb(224,224,224)",
     grayTwo: "rgb(189,189,189)",
     grayThree: "rgb(96,96,96)",
+    red: "#ff0000",
   },
 
   heights: {

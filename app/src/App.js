@@ -5,6 +5,7 @@ import { ThemeProvider } from "styled-components";
 import theme from "./theme/AppTheme";
 
 import Card from "./components/Card/Card";
+import Btn from "./components/Buttons/Btn";
 import TextBtn from "./components/Buttons/TextBtn";
 import IconBtn from "./components/Buttons/IconBtn";
 
@@ -18,7 +19,8 @@ function App() {
 
       <Card>
         card
-        <TextBtn text="Add Faculty" />
+        <TextBtn text="Add project" />
+        <Btn text="foo" />
         <IconBtn label="Edit" onClick={() => {}}>
           <EditIcon />
         </IconBtn>

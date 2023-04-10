@@ -44,7 +44,7 @@ export const projectTheme = {
   },
 
   fonts: {
-    body: "Roboto, system-ui, sans-serif",
+    body: "Inter, system-ui, sans-serif",
     heading: "Merriweather, serif",
     monospace: "Menlo, monospace",
   },
@@ -112,6 +112,7 @@ export const projectTheme = {
     iconHeight: "1.5rem",
   },
   radii: {
+    button: ".25rem",
     default: 4,
     circle: 99999,
   },

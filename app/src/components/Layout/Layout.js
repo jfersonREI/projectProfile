@@ -26,7 +26,7 @@ import GuideNav from "./Sidebar/Guide/GuideNav";
 import Main from "./Main/Main";
 import theme from "../../theme/AdminTheme";
 
-import { Switch, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Dashboard from "../../containers/Dashboard";
 import Presentations from "../../containers/Presentations";
 import Collections from "../../containers/Collections";
@@ -87,7 +87,7 @@ const Layout = () => {
 
   //close guide menu on escape
   (() => {
-    window.onkeyup = function(e) {
+    window.onkeyup = function (e) {
       if (e.keyCode === 27) {
         if (scrimVis === "visible") {
           closeGuideMenu();
@@ -204,7 +204,7 @@ const Layout = () => {
       </MiniGuide>
 
       <Main guide={main}>
-        <Switch>
+        <Routes>
           <Route path="/dash" exact strict component={Dashboard} />
           <Route path="/presentations" exact component={Presentations} />
           <Route
@@ -215,7 +215,7 @@ const Layout = () => {
           />
           <Route path="/courses" exact component={Courses} />
           <Route component={NotFound} />
-        </Switch>
+        </Routes>
       </Main>
     </>
   );

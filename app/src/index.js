@@ -1,17 +1,22 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import Router from "./Router";
+import { init as initApm } from "@elastic/apm-rum";
+import "./styles.css";
 
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
+initApm({
+  serviceName: "Search UI Sandbox",
+  serverUrl:
+    "https://68a4e94cc8b640e6a77b3da09dd7df30.apm.us-central1.gcp.cloud.es.io:443",
+  // Set the service version (required for source map feature)
+  serviceVersion: "",
+  environment: process.env.NODE_ENV
+});
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+ReactDOM.render(
+  <BrowserRouter>
+    <Router />
+  </BrowserRouter>,
+  document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

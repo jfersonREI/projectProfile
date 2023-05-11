@@ -9,7 +9,7 @@ function InputView({ getAutocomplete, getInputProps, getButtonProps }) {
         <input
           id="search"
           {...getInputProps({
-            placeholder: "Search for products..."
+            placeholder: "Search for products...",
           })}
           className="bg-black min-w-full text-white border-none outline-none bg-black min-w-full"
         />
@@ -75,7 +75,7 @@ function AutocompleteView({
   autocompletedSuggestions,
   className,
   getItemProps,
-  getMenuProps
+  getMenuProps,
 }) {
   let index = 0;
   return (
@@ -83,7 +83,7 @@ function AutocompleteView({
       {...getMenuProps({
         className: ["sui-search-box__autocomplete-container", className].join(
           " "
-        )
+        ),
       })}
     >
       <div className="flex">
@@ -116,8 +116,8 @@ function AutocompleteView({
                                 index: index - 1,
                                 item: {
                                   suggestion: suggestionValue,
-                                  ...suggestion.result
-                                }
+                                  ...suggestion.result,
+                                },
                               })}
                               data-transaction-name="query suggestion"
                             >
@@ -132,14 +132,14 @@ function AutocompleteView({
                               key:
                                 suggestion.suggestion || suggestion.highlight,
                               index: index - 1,
-                              item: suggestion
+                              item: suggestion,
                             })}
                             data-transaction-name="query suggestion"
                           >
                             {suggestion.highlight ? (
                               <span
                                 dangerouslySetInnerHTML={{
-                                  __html: suggestion.highlight
+                                  __html: suggestion.highlight,
                                 }}
                               />
                             ) : (
@@ -172,7 +172,7 @@ function AutocompleteView({
                     {...getItemProps({
                       key: result.id.raw,
                       index: index - 1,
-                      item: result
+                      item: result,
                     })}
                     className="mb-2 flex space-x-5"
                   >
@@ -193,7 +193,7 @@ function AutocompleteView({
 
 function Navigation(props) {
   return (
-    <div className="navigation">
+    <div className="navigation bg-purple">
       <div className="mx-auto px-6 flex justify-between max-w-[1300px]">
         <div className="flex items-center mr-10">
           <a
@@ -220,7 +220,7 @@ function Navigation(props) {
         <SearchProvider
           config={{
             ...config,
-            trackUrlState: false
+            trackUrlState: false,
           }}
         >
           <div className="flex-auto py-2 flex justify-self-start">
@@ -240,19 +240,19 @@ function Navigation(props) {
               autocompleteResults={{
                 sectionTitle: "Products",
                 titleField: "name",
-                urlField: "url"
+                urlField: "url",
               }}
               autocompleteSuggestions={{
                 popularQueries: {
                   sectionTitle: "Popular queries",
                   queryType: "results",
-                  displayField: "name"
+                  displayField: "name",
                 },
                 categories: {
                   sectionTitle: "Categories",
                   queryType: "results",
-                  displayField: "category"
-                }
+                  displayField: "category",
+                },
               }}
               inputView={InputView}
               autocompleteView={AutocompleteView}

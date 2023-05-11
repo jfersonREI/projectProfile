@@ -1,18 +1,12 @@
 import React from "react";
-import styled from "styled-components/macro";
 
-const Content = styled.div`
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  height: 100%;
-  padding: ${(props) => props.theme.space[3]};
-  box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
-}
-`;
-
-const Card = (props) => {
-  return <Content>{props.children}</Content>;
-};
+const Card = () => (
+  <div className="group block p-6 bg-rei-primary-blue-30 shadow-lg hover:bg-rei-primary-red-30">
+    <h1 className="font-sans text-md font-medium text-yellow group-hover:text-white">
+      title
+    </h1>
+    <p className="font-sans text-sm">Card</p>
+  </div>
+);
 
 export default Card;

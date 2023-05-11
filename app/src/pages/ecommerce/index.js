@@ -3,12 +3,16 @@
 import * as React from "react";
 import Navigation from "./components/Navigation";
 import ProductCarousel from "./components/ProductCarousel";
+import Card from "./../../components/Card/Card";
+
 import "./styles.css";
 
 export default function Ecommerce() {
   return (
     <>
       <Navigation />
+
+      <Card />
       <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <ProductCarousel
           title="Latest in TVs"

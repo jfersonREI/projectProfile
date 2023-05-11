@@ -2,9 +2,6 @@ import moment from "moment";
 
 import AppSearchAPIConnector from "@elastic/search-ui-app-search-connector";
 
-import Topbar from "./../../components/Layout/Topbar/Topbar";
-import TopbarLogo from "../../components/Layout/Topbar/TopbarLogo";
-
 import {
   ErrorBoundary,
   Facet,
@@ -244,11 +241,6 @@ export default function App() {
         {({ wasSearched }) => {
           return (
             <div className="App customization-example">
-              <Topbar>
-                <TopbarLogo />
-                Project profile
-              </Topbar>
-
               <ErrorBoundary>
                 <Layout
                   header={

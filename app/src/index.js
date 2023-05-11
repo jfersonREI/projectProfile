@@ -1,8 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import AppGlobalStyle from "./theme/AppGlobalStyle";
-import { ThemeProvider } from "styled-components";
-import theme from "./theme/AppTheme";
 
 import { BrowserRouter } from "react-router-dom";
 import Router from "./Router";
@@ -19,11 +16,8 @@ initApm({
 });
 
 ReactDOM.render(
-  <ThemeProvider theme={theme}>
-    <AppGlobalStyle />
-    <BrowserRouter>
-      <Router />
-    </BrowserRouter>
-  </ThemeProvider>,
+  <BrowserRouter>
+    <Router />
+  </BrowserRouter>,
   document.getElementById("root")
 );

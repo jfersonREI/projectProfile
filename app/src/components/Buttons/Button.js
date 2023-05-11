@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 
 const DefaultButton = styled.button`
   background: ${(props) => {
@@ -35,11 +35,7 @@ const DefaultButton = styled.button`
 `;
 
 const Button = ({ text, ...props }) => {
-  return (
-    <DefaultButton {...props} as={props.as}>
-      {text}
-    </DefaultButton>
-  );
+  return <DefaultButton {...props} as={props.as} />;
 };
 
 export default Button;

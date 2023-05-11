@@ -17,3 +17,7 @@
 .customization-example .sui-facet-view-more {
   color: red;
 }
+
+.customization-example .sui-result {
+  font-family: inherit;
+}

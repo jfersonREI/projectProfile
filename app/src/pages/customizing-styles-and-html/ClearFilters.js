@@ -1,16 +1,17 @@
 import { withSearch } from "@elastic/react-search-ui";
+import Button from "./../../components/Buttons/Button";
 
 function ClearFilters({ filters, clearFilters }) {
   return (
     <div>
-      <button onClick={() => clearFilters()}>
+      <Button primary onClick={() => clearFilters()}>
         Clear {filters.length} Filters
-      </button>
+      </Button>
     </div>
   );
 }
 
 export default withSearch(({ filters, clearFilters }) => ({
   filters,
-  clearFilters
+  clearFilters,
 }))(ClearFilters);

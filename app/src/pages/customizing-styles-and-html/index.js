@@ -2,6 +2,9 @@ import moment from "moment";
 
 import AppSearchAPIConnector from "@elastic/search-ui-app-search-connector";
 
+import Topbar from "./../../components/Layout/Topbar/Topbar";
+import TopbarLogo from "../../components/Layout/Topbar/TopbarLogo";
+
 import {
   ErrorBoundary,
   Facet,
@@ -12,13 +15,13 @@ import {
   ResultsPerPage,
   Paging,
   Sorting,
-  WithSearch
+  WithSearch,
 } from "@elastic/react-search-ui";
 import {
   BooleanFacet,
   Layout,
   SingleSelectFacet,
-  SingleLinksFacet
+  SingleLinksFacet,
 } from "@elastic/react-search-ui-views";
 import "@elastic/react-search-ui-views/lib/styles/styles.css";
 // We import custom.css here to override styles defined by the out-ofthe-box stylesheet
@@ -31,56 +34,56 @@ import ClearFilters from "./ClearFilters";
 const SORT_OPTIONS = [
   {
     name: "Relevance",
-    value: []
+    value: [],
   },
   {
     name: "Title",
     value: [
       {
         field: "title",
-        direction: "asc"
-      }
-    ]
+        direction: "asc",
+      },
+    ],
   },
   {
     name: "State",
     value: [
       {
         field: "states",
-        direction: "asc"
-      }
-    ]
+        direction: "asc",
+      },
+    ],
   },
   {
     name: "State -> Title",
     value: [
       {
         field: "states",
-        direction: "asc"
+        direction: "asc",
       },
       {
         field: "title",
-        direction: "asc"
-      }
-    ]
+        direction: "asc",
+      },
+    ],
   },
   {
     name: "Heritage Site -> State -> Title",
     value: [
       {
         field: "world_heritage_site",
-        direction: "asc"
+        direction: "asc",
       },
       {
         field: "states",
-        direction: "asc"
+        direction: "asc",
       },
       {
         field: "title",
-        direction: "asc"
-      }
-    ]
-  }
+        direction: "asc",
+      },
+    ],
+  },
 ];
 
 const connector = new AppSearchAPIConnector({
@@ -89,7 +92,7 @@ const connector = new AppSearchAPIConnector({
   engineName: process.env.REACT_APP_SEARCH_ENGINE_NAME || "national-parks",
   endpointBase:
     process.env.REACT_APP_SEARCH_ENDPOINT_BASE ||
-    "https://search-ui-sandbox.ent.us-central1.gcp.cloud.es.io"
+    "https://search-ui-sandbox.ent.us-central1.gcp.cloud.es.io",
 });
 
 const config = {
@@ -104,8 +107,8 @@ const config = {
       title: {
         snippet: {
           size: 100,
-          fallback: true
-        }
+          fallback: true,
+        },
       },
       nps_link: { raw: {} },
       states: { raw: {} },
@@ -114,9 +117,9 @@ const config = {
       description: {
         snippet: {
           size: 100,
-          fallback: true
-        }
-      }
+          fallback: true,
+        },
+      },
     },
     disjunctiveFacets: ["acres", "states", "date_established", "location"],
     facets: {
@@ -128,8 +131,8 @@ const config = {
           { from: -1, name: "Any" },
           { from: 0, to: 1000, name: "Small" },
           { from: 1001, to: 100000, name: "Medium" },
-          { from: 100001, name: "Large" }
-        ]
+          { from: 100001, name: "Large" },
+        ],
       },
       location: {
         // San Francisco. In the future, make this the user's current position
@@ -139,8 +142,8 @@ const config = {
         ranges: [
           { from: 0, to: 100, name: "Nearby" },
           { from: 100, to: 500, name: "A longer drive" },
-          { from: 500, name: "Perhaps fly?" }
-        ]
+          { from: 500, name: "Perhaps fly?" },
+        ],
       },
       date_established: {
         type: "range",
@@ -148,18 +151,18 @@ const config = {
         ranges: [
           {
             from: moment().subtract(50, "years").toISOString(),
-            name: "Within the last 50 years"
+            name: "Within the last 50 years",
           },
           {
             from: moment().subtract(100, "years").toISOString(),
             to: moment().subtract(50, "years").toISOString(),
-            name: "50 - 100 years ago"
+            name: "50 - 100 years ago",
           },
           {
             to: moment().subtract(100, "years").toISOString(),
-            name: "More than 100 years ago"
-          }
-        ]
+            name: "More than 100 years ago",
+          },
+        ],
       },
       visitors: {
         type: "range",
@@ -170,10 +173,10 @@ const config = {
           { from: 500001, to: 1000000, name: "500001 - 1000000" },
           { from: 1000001, to: 5000000, name: "1000001 - 5000000" },
           { from: 5000001, to: 10000000, name: "5000001 - 10000000" },
-          { from: 10000001, name: "10000001+" }
-        ]
-      }
-    }
+          { from: 10000001, name: "10000001+" },
+        ],
+      },
+    },
   },
   autocompleteQuery: {
     results: {
@@ -182,24 +185,24 @@ const config = {
         title: {
           snippet: {
             size: 100,
-            fallback: true
-          }
+            fallback: true,
+          },
         },
         nps_link: {
-          raw: {}
-        }
-      }
+          raw: {},
+        },
+      },
     },
     suggestions: {
       types: {
         documents: {
-          fields: ["title", "description"]
-        }
+          fields: ["title", "description"],
+        },
       },
-      size: 4
-    }
+      size: 4,
+    },
   },
-  apiConnector: connector
+  apiConnector: connector,
 };
 
 const CustomPagingInfoView = ({ start, end }) => (
@@ -241,22 +244,29 @@ export default function App() {
         {({ wasSearched }) => {
           return (
             <div className="App customization-example">
+              <Topbar>
+                <TopbarLogo />
+                Project profile
+              </Topbar>
+
               <ErrorBoundary>
                 <Layout
                   header={
-                    <SearchBox
-                      autocompleteMinimumCharacters={3}
-                      autocompleteResults={{
-                        linkTarget: "_blank",
-                        sectionTitle: "Results",
-                        titleField: "title",
-                        urlField: "nps_link",
-                        shouldTrackClickThrough: true,
-                        clickThroughTags: ["test"]
-                      }}
-                      autocompleteSuggestions={true}
-                      debounceLength={0}
-                    />
+                    <span className="moop">
+                      <SearchBox
+                        autocompleteMinimumCharacters={3}
+                        autocompleteResults={{
+                          linkTarget: "_blank",
+                          sectionTitle: "Results",
+                          titleField: "title",
+                          urlField: "nps_link",
+                          shouldTrackClickThrough: true,
+                          clickThroughTags: ["test"],
+                        }}
+                        autocompleteSuggestions={true}
+                        debounceLength={0}
+                      />
+                    </span>
                   }
                   sideContent={
                     <div>

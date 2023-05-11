@@ -1,5 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import AppGlobalStyle from "./theme/AppGlobalStyle";
+import { ThemeProvider } from "styled-components";
+import theme from "./theme/AppTheme";
+
 import { BrowserRouter } from "react-router-dom";
 import Router from "./Router";
 import { init as initApm } from "@elastic/apm-rum";
@@ -11,12 +15,15 @@ initApm({
     "https://68a4e94cc8b640e6a77b3da09dd7df30.apm.us-central1.gcp.cloud.es.io:443",
   // Set the service version (required for source map feature)
   serviceVersion: "",
-  environment: process.env.NODE_ENV
+  environment: process.env.NODE_ENV,
 });
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Router />
-  </BrowserRouter>,
+  <ThemeProvider theme={theme}>
+    <AppGlobalStyle />
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
+  </ThemeProvider>,
   document.getElementById("root")
 );

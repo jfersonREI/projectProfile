@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as Logo } from "../../../assets/admin-logo.svg";
+import { ReactComponent as Logo } from "../../../assets/logos/logo-rei-white.svg";
 import styled from "styled-components/macro";
 
 const Wrapper = styled.div`
@@ -14,10 +14,10 @@ const Wrapper = styled.div`
   }
 `;
 
-const TopbarLogo = props => {
+const TopbarLogo = (props) => {
   return (
     <Wrapper>
-      <Logo title="ECE Admin" />
+      <Logo title="REI Systems" />
     </Wrapper>
   );
 };

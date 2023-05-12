@@ -1,28 +1,31 @@
 import React from "react";
+import ClientImage from "./../../assets/images/client-fema.png";
 
-const Card = () => (
-  <div className="m-6">
-    <div className="group flex flex-col border border-rei-gray-5 p-6 bg-white shadow-lg hover:bg-rei-primary-red-30">
-      <div className="flex flex-col mb-6">image</div>
-      <div className="flex flex-col mb-6">
-        <h1 className="font-sans text-md font-bold text-rei-gray-90 group-hover:text-white mb-2">
-          title
-        </h1>
-        <p className="font-sans text-rei-gray-70 text-sm mb-6">12/12/12/1/2</p>
-        <p className="font-sans text-rei-gray-70 text-sm line-clamp-2">
-          Lorem ipsum dolor sit amet, consectetur adip isicing elit. Optio
-          ratione consectetur excep turi lorem ipsum dolor sit amet, consectetur
-          adip isicing elit. Optio ratione consectetur excep turilorem ipsum
-          dolor sit amet, consectetur adip isicing elit. Optio ratione
-          consectetur excep turivvv
-        </p>
-      </div>
-      <div className="border-t border-rei-gray-5 pt-6 flex justify-between">
-        <span className="text-rei-gray-70 text-sm uppercase">
-          Health Systems BU - HRSA
-        </span>
-        <span className="text-rei-gray-70 text-sm">Medium</span>
-      </div>
+const Card = (props) => (
+  <div className="flex flex-col border border-rei-gray-5 py-8 px-6 bg-white shadow-sm rounded">
+    <div className="flex flex-col mb-6">
+      <img
+        src={ClientImage}
+        alt={props.clientName}
+        className="w-14 h-auto rounded"
+      />
+    </div>
+    <div className="flex flex-col mb-6">
+      <h1 className="font-sans text-md font-bold text-rei-gray-90 mb-1">
+        {props.title}
+      </h1>
+      <h2 className="font-sans text-rei-blue-30 text-sm mb-4 uppercase tracking-wide">
+        {props.businessUnit}
+      </h2>
+      <p className="font-sans text-rei-gray-70 text-sm leading-relaxed line-clamp-2">
+        {props.shortDesc}
+      </p>
+    </div>
+    <div className="border-t border-rei-gray-5 pt-6 flex justify-between">
+      <span className="text-rei-gray-30 text-sm uppercase">
+        {props.popDate}
+      </span>
+      <span className="text-rei-gray-30 text-sm">{props.size}</span>
     </div>
   </div>
 );

@@ -1,0 +1,46 @@
+//fonts --------------------
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+// tailwind --------------------
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+//components --------------------
+@import "../components/Card/Card.scss";
+
+//demo code - delete
+.sui-layout,
+.sui-layout-body,
+.sui-layout-main,
+.sui-paging-info,
+.sui-results-per-page,
+.sui-select,
+.sui-facet,
+.sui-sorting__label {
+  @apply font-sans;
+}
+.sui-layout-header.sui-layout-header {
+  padding: 0;
+}
+
+.sui-layout-main-header {
+  margin-bottom: 1rem;
+}
+
+.sui-layout-header {
+  border: none;
+}
+
+.navigation {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+}
+
+.sui-search-box__suggestion-list {
+  width: 200px;
+}

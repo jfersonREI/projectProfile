@@ -5,13 +5,13 @@ import React from "react";
 function InputView({ getAutocomplete, getInputProps, getButtonProps }) {
   return (
     <div className="flex-auto flex py-2 flex justify-self-start">
-      <div className="border-gray-600 border bg-black py-2 px-4 pr-8 relative my-2 w-[500px]">
+      <div className="border-gray-600 border bg-rei-blue-80 py-2 px-4 pr-8 relative my-2 w-[500px]">
         <input
           id="search"
           {...getInputProps({
             placeholder: "Search for products...",
           })}
-          className="bg-black min-w-full text-white border-none outline-none bg-black min-w-full"
+          className="bg-rei-blue-80 min-w-full text-white border-none outline-none bg-black min-w-full"
         />
         {getAutocomplete()}
         <div className="searchbar-iconContainer">
@@ -179,6 +179,7 @@ function AutocompleteView({
                     <img
                       className="m-auto flex-shrink-0 max-w-[30px]"
                       src={result.image.raw}
+                      alt=""
                     />
                     <h5 className="flex-1 text-sm">{titleRaw}</h5>
                   </li>
@@ -193,14 +194,14 @@ function AutocompleteView({
 
 function Navigation(props) {
   return (
-    <div className="navigation bg-purple">
+    <div className="navigation bg-rei-blue-90">
       <div className="mx-auto px-6 flex justify-between max-w-[1300px]">
         <div className="flex items-center mr-10">
           <a
             className="bg-white px-2 font-semibold border rounded-sm"
             href="/ecommerce"
           >
-            ES
+            PP
           </a>
           <nav className="ml-4 py-4">
             <a

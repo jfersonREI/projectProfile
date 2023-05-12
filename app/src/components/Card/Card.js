@@ -2,7 +2,7 @@ import React from "react";
 import ClientImage from "./../../assets/images/client-fema.png";
 
 const Card = (props) => (
-  <div className="flex flex-col border border-rei-gray-5 py-8 px-6 bg-white shadow-sm rounded">
+  <div className="flex flex-col border border-rei-gray-5 py-8 px-6 bg-white shadow-sm rounded ease-in-out duration-300 hover:shadow-lg">
     <div className="flex flex-col mb-6">
       <img
         src={ClientImage}

@@ -10,7 +10,7 @@ export default function Ecommerce() {
   return (
     <>
       <Navigation />
-      <div className="py-12 px-4 sm:px-6 lg:px-8">
+      <div className="py-12 px-4 sm:px-6 lg:px-8 bg-rei-lt-gray">
         <CardGrid>
           <Card
             title="Project Title"

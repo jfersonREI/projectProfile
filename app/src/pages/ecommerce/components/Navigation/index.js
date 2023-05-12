@@ -9,7 +9,7 @@ function InputView({ getAutocomplete, getInputProps, getButtonProps }) {
         <input
           id="search"
           {...getInputProps({
-            placeholder: "Search for products...",
+            placeholder: "Search for projects...",
           })}
           className="bg-rei-blue-80 min-w-full text-white border-none outline-none bg-black min-w-full"
         />

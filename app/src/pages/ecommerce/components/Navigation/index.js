@@ -1,6 +1,7 @@
 import { SearchProvider, SearchBox } from "@elastic/react-search-ui";
 import { config } from "./config";
 import React from "react";
+import { ReactComponent as Logo } from "../../../../assets/logos/logo-rei-white.svg";
 
 function InputView({ getAutocomplete, getInputProps, getButtonProps }) {
   return (
@@ -197,11 +198,8 @@ function Navigation(props) {
     <div className="navigation bg-rei-blue-90">
       <div className="mx-auto px-6 flex justify-between max-w-[1300px]">
         <div className="flex items-center mr-10">
-          <a
-            className="bg-white px-2 font-semibold border rounded-sm"
-            href="/ecommerce"
-          >
-            PP
+          <a className="" href="/ecommerce">
+            <Logo className="w-12" />
           </a>
           <nav className="ml-4 py-4">
             <a

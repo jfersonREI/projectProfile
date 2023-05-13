@@ -24,9 +24,7 @@ const Card = (props) => (
     </div>
     <div className="flex flex-col md:flex-row md:justify-between md:items-center border-t border-rei-gray-5 pt-6 text-rei-gray-30 text-sm">
       <span className="uppercase">{props.businessUnit}</span>
-      <span className="pt-1 md:pt-0">
-        <CardMeasure size={props.size} />
-      </span>
+      <CardMeasure size={props.size} />
     </div>
   </div>
 );

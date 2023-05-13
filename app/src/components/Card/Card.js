@@ -1,5 +1,6 @@
 import React from "react";
 import ClientImage from "./../../assets/images/client-fema.png";
+import CardMeasure from "./CardMeasure";
 
 const Card = (props) => (
   <div className="flex flex-col border border-white py-8 px-6 bg-white shadow-sm rounded ease-in-out duration-300 hover:border-rei-blue-5 hover:shadow-lg">
@@ -21,11 +22,11 @@ const Card = (props) => (
         {props.shortDesc}
       </p>
     </div>
-    <div className="border-t border-rei-gray-5 pt-6 flex justify-between">
-      <span className="text-rei-gray-30 text-sm uppercase">
-        {props.businessUnit}
+    <div className="flex flex-col md:flex-row md:justify-between md:items-center border-t border-rei-gray-5 pt-6 text-rei-gray-30 text-sm">
+      <span className="uppercase">{props.businessUnit}</span>
+      <span className="pt-1 md:pt-0">
+        <CardMeasure size={props.size} />
       </span>
-      <span className="text-rei-gray-30 text-sm">{props.size}</span>
     </div>
   </div>
 );

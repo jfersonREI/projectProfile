@@ -1,15 +1,12 @@
 import React from "react";
-import ClientImage from "./../../assets/images/client-fema.png";
+import CardLogo from "./CardLogo";
 import CardMeasure from "./CardMeasure";
+import ClientLogo from "../../assets/images/client-fema.png";
 
 const Card = (props) => (
   <div className="flex flex-col border border-white py-8 px-6 bg-white shadow-sm rounded ease-in-out duration-300 hover:border-rei-blue-5 hover:shadow-lg">
     <div className="flex flex-col mb-6">
-      <img
-        src={ClientImage}
-        alt={props.clientName}
-        className="w-14 h-auto rounded"
-      />
+      <CardLogo clientName={props.clientName} clientLogo={ClientLogo} />
     </div>
     <div className="flex flex-col mb-6">
       <h1 className="font-sans text-md font-semibold text-rei-gray-90 mb-1">

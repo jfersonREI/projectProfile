@@ -51,11 +51,11 @@ export const CustomResultView = ({ result, onClickLink }) => (
                   >
                     <div
                       style={{ backgroundImage: `url(${variant.image.raw})` }}
-                      class="inline-block w-[25px] h-[25px] bg-contain bg-no-repeat bg-center"
+                      class="inline-block h-[25px] w-[25px] bg-contain bg-center bg-no-repeat"
                     ></div>
                     <span
                       dangerouslySetInnerHTML={{ __html: variant.name.snippet }}
-                      class="text-xs ml-2"
+                      class="ml-2 text-xs"
                     />
                   </a>
                 </li>

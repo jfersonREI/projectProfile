@@ -11,7 +11,7 @@ export default function Ecommerce() {
   return (
     <>
       <Navigation />
-      <div className="py-12 px-4 sm:px-6 lg:px-8 bg-rei-lt-gray">
+      <div className="bg-rei-lt-gray px-4 py-12 sm:px-6 lg:px-8">
         <CardGrid>
           <Card
             title="Project Title"
@@ -69,7 +69,7 @@ export default function Ecommerce() {
           />
         </CardGrid>
       </div>
-      <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8">
         <ProductCarousel
           title="Latest in TVs"
           filters={[{ field: "parent_category", values: ["TVs"] }]}

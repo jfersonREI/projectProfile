@@ -75,7 +75,7 @@ module.exports = {
       "rei-lt-gray": "#f5f8fa",
     },
     fontFamily: {
-      sans: ["Roboto", "sans-serif"],
+      sans: ["Inter", "sans-serif"],
       serif: ["Merriweather", "serif"],
     },
     extend: {},

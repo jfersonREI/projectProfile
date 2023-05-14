@@ -11,12 +11,12 @@ import {
   ResultsPerPage,
   Paging,
   Sorting,
-  WithSearch
+  WithSearch,
 } from "@elastic/react-search-ui";
 import {
   Layout,
   SingleLinksFacet,
-  BooleanFacet
+  BooleanFacet,
 } from "@elastic/react-search-ui-views";
 import "@elastic/react-search-ui-views/lib/styles/styles.css";
 import { CustomResultView } from "./CustomResultView";
@@ -36,17 +36,17 @@ const categoryPageconfig = (category) => ({
           { from: 200, to: 500, name: "$200 to $500" },
           { from: 500, to: 1000, name: "$500 to $1000" },
           { from: 1000, to: 2000, name: "$1000 to $2000" },
-          { from: 2000, name: "$2000 & Above" }
-        ]
-      }
-    }
-  }
+          { from: 2000, name: "$2000 & Above" },
+        ],
+      },
+    },
+  },
 });
 
 const BrowseHeader = ({ category }) => {
   return (
     <div className="bg-slate-50 flex justify-center">
-      <div className="max-w-[1300px] py-5 px-5 w-full">
+      <div className="w-full max-w-[1300px] px-5 py-5">
         <h2 className="text-2xl font-bold">{category}</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting

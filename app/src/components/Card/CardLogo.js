@@ -1,7 +1,7 @@
 import React from "react";
 
 const CardLogo = ({ clientLogo, clientName }) => (
-  <img src={clientLogo} alt={clientName} className="w-14 h-auto rounded" />
+  <img src={clientLogo} alt={clientName} className="h-auto w-14 rounded" />
 );
 
 export default CardLogo;

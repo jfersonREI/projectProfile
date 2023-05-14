@@ -5,19 +5,19 @@ import { ReactComponent as Logo } from "../../../../assets/logos/logo-rei.svg";
 
 function InputView({ getAutocomplete, getInputProps, getButtonProps }) {
   return (
-    <div className="flex-auto flex py-2 flex justify-self-start">
-      <div className="border-gray-600 border bg-rei-blue-80 py-2 px-4 pr-8 relative my-2 w-[500px]">
+    <div className="flex flex-auto justify-self-start py-2">
+      <div className="border-gray-600 relative my-2 w-[500px] border bg-rei-blue-80 px-4 py-2 pr-8">
         <input
           id="search"
           {...getInputProps({
             placeholder: "Search for projects...",
           })}
-          className="bg-rei-blue-80 min-w-full text-white border-none outline-none bg-black min-w-full"
+          className="min-w-full border-none bg-rei-blue-80 text-white outline-none"
         />
         {getAutocomplete()}
         <div className="searchbar-iconContainer">
           <svg
-            className="absolute text-white right-3 top-3 w-[16px]"
+            className="absolute right-3 top-3 w-[16px] text-white"
             fill="currentColor"
             viewBox="0 0 20 20"
           >
@@ -158,7 +158,7 @@ function AutocompleteView({
         {!!autocompleteResults &&
           !!autocompletedResults &&
           autocompletedResults.length > 0 && (
-            <ul className="flex flex-col w-[300px]">
+            <ul className="flex w-[300px] flex-col">
               {autocompletedResults.map((result) => {
                 index++;
                 const titleField =
@@ -178,7 +178,7 @@ function AutocompleteView({
                     className="mb-2 flex space-x-5"
                   >
                     <img
-                      className="m-auto flex-shrink-0 max-w-[30px]"
+                      className="m-auto max-w-[30px] flex-shrink-0"
                       src={result.image.raw}
                       alt=""
                     />
@@ -196,10 +196,10 @@ function AutocompleteView({
 function Navigation(props) {
   return (
     <div className="navigation bg-rei-blue-90">
-      <div className="mx-auto px-6 flex justify-between max-w-[1300px]">
-        <div className="flex items-center mr-10">
+      <div className="mx-auto flex max-w-[1300px] justify-between px-6">
+        <div className="mr-10 flex items-center">
           <a className="text-white hover:text-rei-blue-10" href="/ecommerce">
-            <Logo className="w-12 fill-current" />
+            <Logo className="fill-current w-12" />
           </a>
           <nav className="ml-4 py-4">
             <a
@@ -222,7 +222,7 @@ function Navigation(props) {
             trackUrlState: false,
           }}
         >
-          <div className="flex-auto py-2 flex justify-self-start">
+          <div className="flex flex-auto justify-self-start py-2">
             <SearchBox
               onSelectAutocomplete={(suggestion, config, defaultHandler) => {
                 // eslint-disable-next-line

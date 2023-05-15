@@ -244,21 +244,19 @@ export default function App() {
               <ErrorBoundary>
                 <Layout
                   header={
-                    <span className="moop">
-                      <SearchBox
-                        autocompleteMinimumCharacters={3}
-                        autocompleteResults={{
-                          linkTarget: "_blank",
-                          sectionTitle: "Results",
-                          titleField: "title",
-                          urlField: "nps_link",
-                          shouldTrackClickThrough: true,
-                          clickThroughTags: ["test"],
-                        }}
-                        autocompleteSuggestions={true}
-                        debounceLength={0}
-                      />
-                    </span>
+                    <SearchBox
+                      autocompleteMinimumCharacters={3}
+                      autocompleteResults={{
+                        linkTarget: "_blank",
+                        sectionTitle: "Results",
+                        titleField: "title",
+                        urlField: "nps_link",
+                        shouldTrackClickThrough: true,
+                        clickThroughTags: ["test"],
+                      }}
+                      autocompleteSuggestions={true}
+                      debounceLength={0}
+                    />
                   }
                   sideContent={
                     <div>

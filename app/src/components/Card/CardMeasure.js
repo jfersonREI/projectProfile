@@ -6,7 +6,7 @@ const CardMeasure = ({ size }) => (
     <span className="mr-1">
       <Icon className="fill-current w-6" />
     </span>
-    <span className="uppercase">{size}</span>
+    <span className="text-xs uppercase">{size}</span>
   </div>
 );
 

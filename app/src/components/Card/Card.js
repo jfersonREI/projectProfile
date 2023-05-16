@@ -8,10 +8,10 @@ const Card = (props) => (
       <CardLogo clientName={props.clientName} clientLogo={props.clientLogo} />
     </div>
     <div className="mb-6 flex flex-col">
-      <h1 className="text-md mb-2 font-sans text-sm font-bold text-rei-blue-90">
+      <h1 className="text-md mb-1 font-sans text-base font-bold tracking-tight text-rei-blue-90">
         {props.title}
       </h1>
-      <p className="mb-4 font-sans text-xxs font-medium uppercase tracking-wide text-rei-blue-50">
+      <p className="mb-4 font-sans text-xs font-medium uppercase text-rei-blue-50">
         {props.businessUnit}
       </p>
       <p className="line-clamp-2 font-sans text-xs leading-relaxed text-rei-gray-50">

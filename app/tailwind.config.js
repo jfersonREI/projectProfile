@@ -78,7 +78,13 @@ module.exports = {
       sans: ["Inter", "sans-serif"],
       serif: ["Merriweather", "serif"],
     },
-    extend: {},
+
+    extend: {
+      fontSize: {
+        xxxs: "0.625rem",
+        xxs: "0.6875rem",
+      },
+    },
   },
   plugins: [],
 };

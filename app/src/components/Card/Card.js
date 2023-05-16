@@ -8,18 +8,18 @@ const Card = (props) => (
       <CardLogo clientName={props.clientName} clientLogo={props.clientLogo} />
     </div>
     <div className="mb-6 flex flex-col">
-      <h1 className="text-md mb-1 font-sans text-sm font-semibold text-rei-gray-90">
+      <h1 className="text-md mb-2 font-sans text-sm font-bold text-rei-blue-90">
         {props.title}
       </h1>
-      <p className="mb-4 font-sans text-xs uppercase tracking-wide text-rei-gray-70">
-        {props.popDate}
+      <p className="mb-4 font-sans text-xxs font-medium uppercase tracking-wide text-rei-blue-50">
+        {props.businessUnit}
       </p>
       <p className="line-clamp-2 font-sans text-xs leading-relaxed text-rei-gray-50">
         {props.shortDesc}
       </p>
     </div>
     <div className="flex flex-col border-t border-rei-gray-5 pt-6 text-xs text-rei-gray-50 md:flex-row md:items-center md:justify-between">
-      <span className="uppercase">{props.businessUnit}</span>
+      {props.popDate}
       <CardMeasure size={props.size} />
     </div>
   </div>

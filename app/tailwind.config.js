@@ -84,6 +84,31 @@ module.exports = {
         xxxs: "0.625rem",
         xxs: "0.6875rem",
       },
+      animation: {
+        fadeIn: "fadeIn 500ms ease-in forwards",
+        fadeOut: "fadeOut 500ms ease-out forwards",
+        fadeInSlow: "fadeIn 1000ms ease-in forwards",
+        fadeOutSlow: "fadeOut 1000ms ease-out forwards",
+        scaleIn: "scaleIn 300ms ease-in forwards",
+        rotate: "rotate 1s linear infinite",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
+        fadeOut: {
+          "100%": { opacity: 1 },
+          "0%": { opacity: 0 },
+        },
+        scaleIn: {
+          "0%": { transform: "scale(0)" },
+          "100%": { transform: "scale(1)" },
+        },
+        rotate: {
+          "100%": { transform: "rotate(360deg)" },
+        },
+      },
     },
   },
   plugins: [],

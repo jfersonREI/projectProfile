@@ -7,7 +7,7 @@ const Card = (props) => (
     <div className="mb-6 flex flex-col">
       <CardLogo clientName={props.clientName} clientLogo={props.clientLogo} />
     </div>
-    <div className="mb-6 flex flex-col">
+    <div className="mb-6 flex flex-1 flex-col">
       <h1 className="text-md mb-1 font-sans text-base font-bold tracking-tight text-rei-blue-90">
         {props.title}
       </h1>
@@ -18,7 +18,7 @@ const Card = (props) => (
         {props.shortDesc}
       </p>
     </div>
-    <div className="flex flex-col border-t border-rei-gray-5 pt-6 text-xs text-rei-gray-50 md:flex-row md:items-center md:justify-between">
+    <div className="flex flex-col border-t border-rei-blue-5 pt-6 text-xs text-rei-gray-50 md:flex-row md:items-center md:justify-between">
       {props.popDate}
       <CardMeasure size={props.size} />
     </div>

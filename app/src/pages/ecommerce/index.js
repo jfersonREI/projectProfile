@@ -19,7 +19,7 @@ export default function Ecommerce() {
             clientName="FEMA"
             clientLogo={ClientLogo}
             popDate="12/12/2023 - 12/12/2029"
-            shortDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            shortDesc="Emergency Management Mission Integrated Environment (EMMIE) and Emergency Coordination (EC) provides application development, sustainment and integration"
             businessUnit="Health Systems BU - HRSA"
             size="L"
           />
@@ -28,7 +28,7 @@ export default function Ecommerce() {
             clientName="NASA"
             clientLogo={ClientLogoNasa}
             popDate="12/12/2023 - 12/12/2029"
-            shortDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            shortDesc="SBIR/STTR program support"
             businessUnit="OGST BU - NASA/DOD"
             size="S"
           />
@@ -37,7 +37,7 @@ export default function Ecommerce() {
             clientName="FEMA"
             clientLogo={ClientLogo}
             popDate="12/12/2023 - 12/12/2029"
-            shortDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            shortDesc="The FEMA Data Exchange (FEMADex) is a modern, cloud-based, data analytics solution to replace the agency’s legacy Enterprise Data Warehouse (EDW)."
             businessUnit="Health Systems BU - HRSA"
             size="M"
           />

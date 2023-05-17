@@ -11,20 +11,24 @@ const Card = (props) => (
       <p className="mb-1 font-sans text-base font-semibold tracking-tight text-black">
         {props.title}
       </p>
-      <p className="mb-4 font-sans text-xs font-medium uppercase text-rei-gray-90">
+      <p className="mb-1 font-sans text-xs font-medium uppercase text-rei-gray-90">
         {props.businessUnit}
       </p>
+      <hr
+        aria-hidden="true"
+        class="mb-6 mt-2 h-0.5 w-14 border-0 bg-rei-blue-5"
+      />
       <p className="line-clamp-2 font-sans text-xs leading-relaxed text-rei-gray-70">
         {props.shortDesc}
-      </p>
+      </p>{" "}
       <div class="mt-6 flex -space-x-2 overflow-hidden">
         <img
-          class="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+          class="inline-block h-8 w-8 rounded-full ring-2 ring-white"
           src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
           alt=""
         />
         <img
-          class="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+          class="inline-block h-8 w-8 rounded-full ring-2 ring-white"
           src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
           alt=""
         />

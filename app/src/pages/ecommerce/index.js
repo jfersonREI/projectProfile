@@ -20,7 +20,7 @@ export default function Ecommerce() {
             clientLogo={ClientLogo}
             popDate="12/12/2023 - 12/12/2029"
             shortDesc="Emergency Management Mission Integrated Environment (EMMIE) and Emergency Coordination (EC) provides application development, sustainment and integration"
-            businessUnit="OGST BU - DHS"
+            businessUnit="OGST BU"
             size="L"
           />
           <Card
@@ -29,7 +29,7 @@ export default function Ecommerce() {
             clientLogo={ClientLogoNasa}
             popDate="12/12/2023 - 12/12/2029"
             shortDesc="SBIR/STTR program support"
-            businessUnit="OGST BU - NASA/DOD"
+            businessUnit="OGST BU"
             size="S"
           />
           <Card
@@ -38,7 +38,7 @@ export default function Ecommerce() {
             clientLogo={ClientLogo}
             popDate="12/12/2023 - 12/12/2029"
             shortDesc="The FEMA Data Exchange (FEMADex) is a modern, cloud-based, data analytics solution to replace the agency’s legacy Enterprise Data Warehouse (EDW)."
-            businessUnit="OGST BU - DHS"
+            businessUnit="OGST BU"
             size="M"
           />
           <Card

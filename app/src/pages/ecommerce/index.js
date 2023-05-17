@@ -20,7 +20,7 @@ export default function Ecommerce() {
             clientLogo={ClientLogo}
             popDate="12/12/2023 - 12/12/2029"
             shortDesc="Emergency Management Mission Integrated Environment (EMMIE) and Emergency Coordination (EC) provides application development, sustainment and integration"
-            businessUnit="Health Systems BU - HRSA"
+            businessUnit="OGST BU - DHS"
             size="L"
           />
           <Card
@@ -38,7 +38,7 @@ export default function Ecommerce() {
             clientLogo={ClientLogo}
             popDate="12/12/2023 - 12/12/2029"
             shortDesc="The FEMA Data Exchange (FEMADex) is a modern, cloud-based, data analytics solution to replace the agency’s legacy Enterprise Data Warehouse (EDW)."
-            businessUnit="Health Systems BU - HRSA"
+            businessUnit="OGST BU - DHS"
             size="M"
           />
           <Card

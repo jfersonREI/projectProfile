@@ -74,6 +74,23 @@ module.exports = {
       "rei-blue-90": "#00234a",
       "rei-lt-gray": "#f5f8fa",
     },
+    fontSize: {
+      "11xl": "6.25rem", // 100px
+      "10xl": "4.5rem", // 72px
+      "9xl": "3.5rem", // 56px
+      "8xl": "2.75rem", // 44px
+      "7xl": "2.5rem", // 40px
+      "6xl": "2rem", // 32px
+      "5xl": "1.75rem", // 28px
+      "4xl": "1.625rem", // 26px
+      "3xl": "1.5rem", // 24px
+      "2xl": "1.375rem", // 22px
+      xl: "1.25rem", // 20px
+      lg: "1.125rem", // 18px
+      base: "1rem", // 16px
+      sm: "0.875rem", // 14px
+      xs: "0.8125rem", // 13px
+    },
     fontFamily: {
       sans: ["Inter", "sans-serif"],
       serif: ["Merriweather", "serif"],
@@ -81,8 +98,8 @@ module.exports = {
 
     extend: {
       fontSize: {
-        xxxs: "0.625rem",
-        xxs: "0.6875rem",
+        xxxs: "0.625rem", // 10px
+        xxs: "0.75rem", // 12px
       },
       animation: {
         fadeIn: "fadeIn 500ms ease-in forwards",

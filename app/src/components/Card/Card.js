@@ -8,17 +8,29 @@ const Card = (props) => (
       <CardLogo clientName={props.clientName} clientLogo={props.clientLogo} />
     </div>
     <div className="mb-6 flex flex-1 flex-col">
-      <h1 className="mb-1 font-sans text-base font-bold tracking-tight text-rei-blue-90">
+      <p className="mb-1 font-sans text-base font-semibold tracking-tight text-black">
         {props.title}
-      </h1>
-      <p className="mb-4 font-sans text-xs font-medium uppercase text-rei-blue-50">
+      </p>
+      <p className="mb-4 font-sans text-xs font-medium uppercase text-rei-gray-90">
         {props.businessUnit}
       </p>
-      <p className="line-clamp-2 font-sans text-xs font-light leading-relaxed text-rei-blue-60">
+      <p className="line-clamp-2 font-sans text-xs leading-relaxed text-rei-gray-70">
         {props.shortDesc}
       </p>
+      <div class="mt-6 flex -space-x-2 overflow-hidden">
+        <img
+          class="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+          src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+          alt=""
+        />
+        <img
+          class="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+          src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+          alt=""
+        />
+      </div>
     </div>
-    <div className="flex flex-col border-t border-rei-blue-5 pt-6 text-xs text-rei-gray-50 md:flex-row md:items-center md:justify-between">
+    <div className="flex flex-col border-t border-rei-blue-5 pt-6 text-xs text-rei-gray-70 md:flex-row md:items-center md:justify-between">
       {props.popDate}
       <CardMeasure size={props.size} />
     </div>

@@ -3,18 +3,18 @@ import CardLogo from "./CardLogo";
 import CardMeasure from "./CardMeasure";
 
 const Card = (props) => (
-  <div className="flex animate-fadeIn flex-col rounded border border-rei-blue-5 bg-white px-6 py-8 shadow-sm duration-300 ease-in-out hover:border-rei-blue-10 hover:shadow-lg">
-    <div className="mb-6 flex flex-col">
+  <div className="flex animate-fadeIn flex-col rounded border border-rei-blue-5 bg-white p-6 shadow-sm duration-300 ease-in-out hover:border-rei-blue-10 hover:shadow-lg">
+    <div className="mb-6 flex flex-col pt-2">
       <CardLogo clientName={props.clientName} clientLogo={props.clientLogo} />
     </div>
     <div className="mb-6 flex flex-1 flex-col">
-      <h1 className="text-md mb-1 font-sans text-base font-bold tracking-tight text-rei-blue-90">
+      <h1 className="mb-1 font-sans text-base font-bold tracking-tight text-rei-blue-90">
         {props.title}
       </h1>
       <p className="mb-4 font-sans text-xs font-medium uppercase text-rei-blue-50">
         {props.businessUnit}
       </p>
-      <p className="line-clamp-2 font-sans text-xs leading-relaxed text-rei-gray-50">
+      <p className="line-clamp-2 font-sans text-xs font-light leading-relaxed text-rei-blue-60">
         {props.shortDesc}
       </p>
     </div>

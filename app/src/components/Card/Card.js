@@ -8,11 +8,11 @@ const Card = (props) => (
       <CardLogo clientName={props.clientName} clientLogo={props.clientLogo} />
     </div>
     <div className="mb-6 flex flex-1 flex-col">
-      <p className="mb-1 font-sans text-base font-semibold tracking-tight text-black">
-        {props.title}
-      </p>
       <p className="mb-1 font-sans text-xs font-medium uppercase text-rei-gray-90">
         {props.businessUnit}
+      </p>
+      <p className="mb-1 font-sans text-base font-semibold tracking-tight text-black">
+        {props.title}
       </p>
       <hr
         aria-hidden="true"
@@ -20,7 +20,7 @@ const Card = (props) => (
       />
       <p className="line-clamp-2 font-sans text-xs leading-relaxed text-rei-gray-70">
         {props.shortDesc}
-      </p>{" "}
+      </p>
       <div class="mt-6 flex -space-x-2 overflow-hidden">
         <img
           class="inline-block h-8 w-8 rounded-full ring-2 ring-white"

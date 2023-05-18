@@ -109,6 +109,9 @@ module.exports = {
         scaleIn: "scaleIn 300ms ease-in forwards",
         rotate: "rotate 1s linear infinite",
       },
+      boxShadow: {
+        rei: "-4px 5px 60px 0 rgba(0, 0, 0, 0.1)",
+      },
       keyframes: {
         fadeIn: {
           "0%": { opacity: 0 },

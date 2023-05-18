@@ -4,7 +4,7 @@ import CardLogo from "./CardLogo";
 import CardMeasure from "./CardMeasure";
 
 const Card = (props) => (
-  <div className="flex animate-fadeIn flex-col rounded border border-white bg-white p-6 shadow-sm duration-300 ease-in-out hover:border-rei-blue-5 hover:shadow-lg">
+  <div className="flex animate-fadeIn flex-col rounded border border-white bg-white p-6 shadow-sm duration-300 ease-in-out hover:border-rei-blue-5 hover:shadow-rei">
     <div className="mb-8 flex flex-col">
       <CardLogo clientName={props.clientName} clientLogo={props.clientLogo} />
     </div>

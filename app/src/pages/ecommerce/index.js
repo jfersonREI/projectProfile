@@ -21,6 +21,7 @@ export default function Ecommerce() {
             popDate="12/12/2023 - 12/12/2029"
             shortDesc="Emergency Management Mission Integrated Environment (EMMIE) and Emergency Coordination (EC) provides application development, sustainment and integration"
             businessUnit="OGST BU"
+            account="FEMA"
             size="L"
           />
           <Card
@@ -30,6 +31,7 @@ export default function Ecommerce() {
             popDate="12/12/2023 - 12/12/2029"
             shortDesc="SBIR/STTR program support"
             businessUnit="OGST BU"
+            account="NASA"
             size="S"
           />
           <Card
@@ -39,6 +41,7 @@ export default function Ecommerce() {
             popDate="12/12/2023 - 12/12/2029"
             shortDesc="The FEMA Data Exchange (FEMADex) is a modern, cloud-based, data analytics solution to replace the agency’s legacy Enterprise Data Warehouse (EDW)."
             businessUnit="OGST BU"
+            account="FEMA"
             size="M"
           />
           <Card
@@ -47,7 +50,8 @@ export default function Ecommerce() {
             clientLogo={ClientLogo}
             popDate="12/12/2023 - 12/12/2029"
             shortDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            businessUnit="Health Systems BU - HRSA"
+            businessUnit="Health Systems BU"
+            account="HRSA"
             size="M"
           />
           <Card
@@ -56,7 +60,8 @@ export default function Ecommerce() {
             clientLogo={ClientLogo}
             popDate="12/12/2023 - 12/12/2029"
             shortDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            businessUnit="Health Systems BU - HRSA"
+            businessUnit="Health Systems BU"
+            account="HRSA"
             size="M"
           />
           <Card
@@ -65,7 +70,8 @@ export default function Ecommerce() {
             clientLogo={ClientLogo}
             popDate="12/12/2023 - 12/12/2029"
             shortDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            businessUnit="Health Systems BU - HRSA"
+            businessUnit="Health Systems BU"
+            account="HRSA"
             size="M"
           />
         </CardGrid>

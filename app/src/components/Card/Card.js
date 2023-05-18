@@ -1,18 +1,19 @@
 import React from "react";
+//import CardLogo from "./CardLogo";
 import CardLogo from "./CardLogo";
 import CardMeasure from "./CardMeasure";
 
 const Card = (props) => (
   <div className="flex animate-fadeIn flex-col rounded border border-white bg-white p-6 shadow-sm duration-300 ease-in-out hover:border-rei-blue-5 hover:shadow-lg">
-    <div className="mb-6 flex flex-col pt-2">
+    <div className="mb-8 flex flex-col">
       <CardLogo clientName={props.clientName} clientLogo={props.clientLogo} />
     </div>
     <div className="mb-6 flex flex-1 flex-col">
-      <p className="mb-1 font-sans text-xs font-medium uppercase text-rei-gray-90">
-        {props.businessUnit}
-      </p>
       <p className="mb-1 font-sans text-base font-semibold tracking-tight text-black">
         {props.title}
+      </p>
+      <p className="mb-1 font-sans text-xs font-medium uppercase text-rei-gray-90">
+        {props.businessUnit} - {props.account}
       </p>
       <hr
         aria-hidden="true"
